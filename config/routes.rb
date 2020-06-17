@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   get 'top' => 'homes#top'
   # URL「top」にアクセスしたときに、homesコントローラのtopアクションが呼び出される
   post 'todolists' => 'todolists#create'
+
+  get 'todolists' => 'todolists#index'
 end
